@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cleitin da Borracharia</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/Index/index.html"><img src="/Img/logo.png" alt="logo" class="logo"></a>
+        <div class="search-box">
+            <input type="text" class="search-text" placeholder="Pesquisar...">
+        </div>
+        <ul>
+            <li><span class='user'>Nome do usuário</span></li>
+            <li><a href="/Login/login.html">Sair</a></li>
+        </ul>
+    </nav>
+    <br>
+    <div class="box">
+        <div id="edit-client">
+            <a href="#"><img class="edit-img" src="/Img/edit.svg" alt="Editar"></a>
+        </div>
+        <div class="box-client">
+            <div id="direita">
+                <span style="float: right; margin: 5px;">
+                    Data de Cadastro :
+                    <span class="tbold">Date </span><br>
+                    Usuario Responsavel :
+                    <span class="tbold">User </span><br>
+                    Celular :
+                    <span class="tbold">Celular </span><br>
+                    Telefone :
+                    <span class="tbold">Telefone </span><br>
+                </span>
+            </div>
+            <div id="esquerda" style="margin: 5px;">
+                Cliente ID :
+                <span class="tbold">ID </span><br>
+                Nome Cliente :
+                <span class="tbold">Nome </span><br>
+                CPF/CNPJ :
+                <span class="tbold">CPF </span><br>
+                Cidade :
+                <span class="tbold">Cidade </span><br>
+            </div>
+        </div>
+    </div>
+
+    <div class="returnb">
+        <button><a href="/Cliente/cliente.html">Retornar</a></button>
+    </div>
+
+    <section class="header">
+
+        <div class="form-container">
+            <h2>ID Compra</h2>
+            <form>
+                <div class="row">
+                    <div class="left">
+                        <label for="od">OD</label>
+                        <input type="text" id="od" name="od" required>
+
+                        <label for="medico">Médico</label>
+                        <input type="text" id="medico" name="medico" required>
+                    </div>
+
+                    <div class="right">
+                        <label for="ed">OE</label>
+                        <input type="text" id="ed" name="ed" required>
+
+                        <label for="valor">Valor</label>
+                        <input type="number" id="valor" name="valor" step="0.01" class="valor" required>
+                    </div>
+                </div>
+
+                <label for="observacoes">Observações</label>
+                <textarea id="observacoes" name="observacoes"></textarea>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
